@@ -145,7 +145,7 @@ function redirectToApp() {
     window.location.href = "https://appgallery.huawei.com/#/app/C104641235";
   } else {
     // Ako uređaj nije prepoznat, redirektuj na osnovnu LP
-    window.location.href = "./";
+    window.location.href = "./index.html";
   }
 }
 
