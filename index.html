@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobilna Aplikacija</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="./img/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./img/logomb.png" alt="logo" />
+      </div>
+      <div class="btnLng">
+        <div class="btn">
+          <a href="#">Registruj se</a>
+          <a href="#">Prijava</a>
+        </div>
+        <div class="lang-switcher">
+          <a class="lang-rs" id="lang-link" href="#">
+            <img id="flag-img" src="./img/rs.png" alt="Flag" />
+          </a>
+          <ul class="lang-dropdown">
+            <li>
+              <a
+                class="lang-rs"
+                href="#"
+                data-lang="rs"
+                data-image="./img/rs.png"
+              >
+                <img src="./img/rs.png" alt="srpski" />
+              </a>
+            </li>
+            <li>
+              <a
+                class="lang-en"
+                href="#"
+                data-lang="en"
+                data-image="./img/en.swg"
+              >
+                <img src="img/en.svg" alt="English" />
+              </a>
+            </li>
+            <!-- Dodajte više opcija za druge jezike -->
+          </ul>
+        </div>
+        <div id="content">
+          <!-- Sadržaj na odabranom jeziku će biti ovdje -->
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="meridianApp">
+        <div class="meridianApp-wrapper">
+          <div class="meridianApp-text">
+            <h4>Igraj pametno, osvoji veliko</h4>
+            <h2>Preuzmi MERIDIANBET aplikaciju!</h2>
+          </div>
+          <div class="meridianApp-img">
+            <div class="meridianApp-img-box1 box">
+              <p>Android</p>
+              <img
+                class="box-img"
+                src="./img/Android_App_RS.png"
+                alt="qrCode"
+              />
+              <div class="btn-app">
+                <img
+                  class="btn-icon"
+                  src="./img/androidIcon.png"
+                  alt="androidIcon"
+                />
+                <a
+                  href="https://coupons.joker.co.rs/~android/rs/app-rs-release.apk"
+                  >Preuzmi</a
+                >
+              </div>
+            </div>
+            <div class="meridianApp-img-box2 box">
+              <p>iOS</p>
+              <img class="box-img" src="./img/iOS_App_RS.png" alt="qrCode" />
+              <div class="btn-app">
+                <img
+                  class="btn-icon"
+                  src="./img/appleIcon.png"
+                  alt="appleIcon"
+                />
+                <a href="https://itunes.apple.com/gb/app/id1140116001"
+                  >Preuzmi</a
+                >
+              </div>
+            </div>
+            <div class="meridianApp-img-box3 box">
+              <p>Huawei</p>
+              <img class="box-img" src="./img/Huawei_App_Rs.png" alt="qrCode" />
+              <div class="btn-app">
+                <img
+                  class="btn-icon"
+                  src="./img/huaweiIcon.png"
+                  alt="androidIcon"
+                />
+                <a href="https://appgallery.huawei.com/#/app/C104641235"
+                  >Preuzmi</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="pokerApp">
+        <div class="pokerApp-wrapper">
+          <div class="pokerApp-text">
+            <h4>Voliš poker?</h4>
+            <h2>Hold’em Poker Aplikacija!</h2>
+          </div>
+          <div class="pokerApp-img">
+            <div class="pokerApp-img-box1 box">
+              <p>Android</p>
+              <img
+                class="box-img"
+                src="./img/Poker_Android_App_RS.png"
+                alt="qrCode"
+              />
+              <div class="btn-app">
+                <img
+                  class="btn-icon"
+                  src="./img/androidIcon.png"
+                  alt="androidIcon"
+                />
+                <a
+                  href="https://install.appcenter.ms/orgs/meridianbet_android/apps/meridianbet-poker/distribution_groups/all-users"
+                  >Preuzmi</a
+                >
+              </div>
+            </div>
+            <div class="pokerApp-img-box2 box">
+              <p>iOS</p>
+              <img
+                class="box-img"
+                src="./img/Poker_iOS_App_RS.png"
+                alt="qrCode"
+              />
+              <div class="btn-app">
+                <img
+                  class="btn-icon"
+                  src="./img/appleIcon.png"
+                  alt="appleIcon"
+                />
+                <a
+                  href="https://install.appcenter.ms/orgs/meridianbet_android/apps/meridianbet-poker-1/distribution_groups/all-users"
+                  >Preuzmi</a
+                >
+              </div>
+            </div>
+            <div class="pokerApp-img-box3 box">
+              <p>Windows</p>
+              <img
+                class="box-img"
+                src="./img/Poker_Win_App_RS.png"
+                alt="qrCode"
+              />
+              <div class="btn-app">
+                <img
+                  class="btn-icon"
+                  src="./img/huaweiIcon.png"
+                  alt="androidIcon"
+                />
+                <a
+                  href="https://install.appcenter.ms/orgs/meridianbet_android/apps/meridianbet-poker-2/distribution_groups/public"
+                  >Preuzmi</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="instructions">
+        <div class="instructions-wrapper">
+          <h3>Uputstvo za preuzimanje i instaliranje aplikacije</h3>
+          <ul>
+            <li>
+              Dozvolite instaliranje aplikacija van Google-ove radnje: Setting >
+              Security > Unknown Sources > Allow > OK
+            </li>
+            <li>Kliknite na "Preuzmite Aplikaciju" a zatim OK</li>
+            <li>
+              Spustite notifikacioni meni sa vrha ekrana i kliknite na Meridian
+              APK fajl
+            </li>
+            <li>Kliknite na dugme ispod - Meridianbet Android</li>
+            <li>Odaberite "Package Installer"</li>
+            <li>Kliknite "Install"</li>
+          </ul>
+          <h4>Meridianbet iOS App je dostupna na iTunes Stores:</h4>
+          <p>Hrvatska, UK, Belgium, Cyprus, Malta</p>
+          <h4>Meridianbet App je dostupna i na Huawei App Galery</h4>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-wrapper">
+        <div class="payments">
+          <div class="payments-text">
+            <h3>NAČINI PLAĆANJA</h3>
+            <h4>POUZDANI PARTNERI</h4>
+          </div>
+          <div class="payments-icons">
+            <div class="swiper-container mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/dina.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/visa.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/master.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/aik.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/visa-secure-new.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/master-id-check.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/corvuspay.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/maestro.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/skrill.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/mcash.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/visa-secure.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/mc-secure.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/monri.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/webpay.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/ips.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/intesa.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/posta.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/bank.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/v_cash.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sponsorships">
+          <div class="sponsorships-text">
+            <h3>SPONSORSTVO</h3>
+            <h4>PODRŽAVAMO SPORT I FER-PLEJ</h4>
+          </div>
+          <div class="sponsorships-icons">
+            <div class="swiper-container mySwiper1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/zvezda.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/aek.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/CD_Costa_do_Sol.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/clf.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/logo-klubovi/FK Gomjenica Prijedor t.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/FK Goražde t.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/logo-klubovi/FK Rekreativo Banja Luka t.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/FK Zvijezda 09 t.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/logo-klubovi/FK Zvijezda Kakmuž t.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/logo-klubovi/fk željezničar doboj t.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/logo-klubovi/FMP-logo-bez-pozadine.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/logo-klubovi/fudbalski_savez_crne_gore.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/logo-klubovi/Jogabet liga de Maputo t.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/logo-klubovi/KK Promo Donji Vakuf t.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/KK Varda t.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/logo-klubovi/KMCFC_Logo-White (6).svg"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/logo-klubovi/Logo - ZKK RMU Banovici (1)-1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/mladost bulldogs t.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/munchen.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/napredak.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/nea.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/ribnica.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/Sloboda_Tuzla.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/sutjeska.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/valleta t.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/vps t.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/logo-klubovi/zabar t.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="links">
+        <ul class="lista">
+          <li>
+            <a
+              href="https://pomoc.meridianbet.rs/sr/category/522/page/1636"
+              target="_blank"
+              >Uslovi korišćenja</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://pomoc.meridianbet.rs/sr/category/522/page/1640"
+              target="_blank"
+              >Pravila</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://pomoc.meridianbet.rs/sr/category/522/page/1650"
+              target="_blank"
+              >Kontakt</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="https://pomoc.meridianbet.rs/?page_id=1649&cat_id=522&"
+              target="_blank"
+              >Lokacije kladionica</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://pomoc.meridianbet.rs/meridian/drustvena-odgovornost"
+              target="_blank"
+              >Društvena odgovornost</a
+            >
+          </li>
+          <li>
+            <a href="https://partners.meridianbet.rs/login" target="_blank"
+              >Affiliate</a
+            >
+          </li>
+          <li>
+            <a href="https://karijera.meridianbet.rs/" target="_blank"
+              >Karijera</a
+            >
+          </li>
+          <li>
+            <a href="https://meridianbetsport.rs/" target="_blank"
+              >Sportske vesti</a
+            >
+          </li>
+          <li>
+            <a href="https://meridianbet.rs/sr/liste-dopune" target="_blank"
+              >Liste i dopune</a
+            >
+          </li>
+          <li>
+            <a href="https://www.drajzerova.org.rs/" target="_blank"
+              >Odgovorno klađenje</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p>
+          &copy; Meridian Tech d.o.o sva prava zadržana. Meridianbet je u
+          vlasništvu Meridian Tech d.o.o. koji je u agenciji za privredne
+          registre u Srbiji zaveden pod brojem 0872436
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js.js"></script>
+    <script src="mobile-detect.js"></script>
+  </body>
+</html>
