@@ -136,6 +136,7 @@ var md = new MobileDetect(window.navigator.userAgent);
 
 // Funkcija za izvršavanje redirekcije
 function redirectToApp() {
+  var currentUrl = window.location.href;
   if (md.is("iPhone") || md.is("iPad") || md.is("iPod")) {
     window.location.href = "https://itunes.apple.com/gb/app/id1140116001";
   } else if (md.is("AndroidOS")) {
@@ -145,7 +146,7 @@ function redirectToApp() {
     window.location.href = "https://appgallery.huawei.com/#/app/C104641235";
   } else {
     // Ako uređaj nije prepoznat, redirektuj na osnovnu LP
-    window.location.href = "./index.html";
+    currentUrl;
   }
 }
 
